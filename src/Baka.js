@@ -163,9 +163,9 @@ let am = data.map(ss => ss.PhoneNumber)
   {/*  */}
         <span>Name: </span>
         <select className='dropdown' value={CallerName}  selected='' onChange={handleChangeName}>
+        <option  value='' selected>Select</option>
           {uniqueName.map((course) => (
             <>
-            <option disabled hidden value=''>Select</option>
             <option key={uuid4()} value={course.CallerName}>
               {course.CallerName}
             </option>
@@ -226,7 +226,7 @@ let am = data.map(ss => ss.PhoneNumber)
       {/* {submit ? */}
         <div className='flex'>
           {
-           filterDropdown.length > 0 && "No Data" ? 
+          //  filterDropdown.length > 0 && "No Data" ? 
            filterDropdown.sort((a, b) => Number(a.Time) > Number(b.Time) ? 1 : -1).map((course) => (
             <div key={uuid4()} style={{ margin: "10px" }}>
               <p className="time">{course.Time}</p>
@@ -248,7 +248,7 @@ let am = data.map(ss => ss.PhoneNumber)
               <div className="phoneNumber">{formatPhoneNumber(course.PhoneNumber)}</div>
             </div>
           )) 
-          : <div className='nodata'>No Data</div>
+          // : <div className='nodata'>No Data</div>
           } 
         </div>
         {/* : null} */}
