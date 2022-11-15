@@ -1,0 +1,78 @@
+.timeline-container {
+  padding: 1%;
+}
+
+.flex {
+  /* display: grid;
+  grid-template-columns: 100px repeat(8, 1fr auto); */
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: 450px;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+hr {
+  position: absolute;
+  width: 100%;
+  margin-top: 89px;
+}
+
+ label {
+  margin: 1%;
+ }
+ 
+.place {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.evenelement:nth-child(even) > .place {
+  margin-top: 0px;
+  margin-bottom: 0px !important;
+}
+
+.time {
+  font-size: 14px;
+}
+
+.phoneNumber {
+  font-size: 12px;
+  width: 85px;
+}
+
+.result {
+  font-weight: bold;
+}
+
+.nodata {
+  margin-left: 45%;
+}
+
+.dropdown {
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.date {
+  margin-left: 8px;
+}
+
+.generate {
+  font-size: 14px;
+  border-radius: 4px;
+  margin-left: 30px;
+  border: 1px solid black;
+  margin-left: 55px;
+}
+
+
